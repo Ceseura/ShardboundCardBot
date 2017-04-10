@@ -5,7 +5,7 @@ from imgurpython import ImgurClient
 # ALL DATA TAKEN FROM www.shardveil.com
 
 # Used to upload card pictures to imgur. 
-client = ImgurClient("ee1f0e6204e2e8d", "263d92665bb96cc79098637b79958f6a317f554f")
+#client = ImgurClient(#client_id, #client_secret)
 
 # The json file
 myfile = open("myFile.json", "w")
