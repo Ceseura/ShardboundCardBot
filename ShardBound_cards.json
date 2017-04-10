@@ -2053,7 +2053,7 @@
 		"mana": "3", 
 		"attack": "", 
 		"health": "5", 
-		"tribe": "", 
+		"tribe": "Seedling", 
 		"rarity": "Common", 
 		"text": "Deep Strike At the end of each turn, create 3 Blightspore tiles next to this unit or its existing tiles." 
 		},
@@ -2089,7 +2089,7 @@
 		"mana": "3", 
 		"attack": "", 
 		"health": "5", 
-		"tribe": "", 
+		"tribe": "Seedling", 
 		"rarity": "Basic", 
 		"text": "Deep Strike At the end of each turn, restore 2 health to adjacent allies." 
 		},
@@ -2113,7 +2113,7 @@
 		"mana": "3", 
 		"attack": "", 
 		"health": "5", 
-		"tribe": "", 
+		"tribe": "Seedling", 
 		"rarity": "Rare", 
 		"text": "Deep Strike At the end of your turn, summon a 3/1 Angry Stone in a random adjacent tile." 
 		},
@@ -2677,7 +2677,7 @@
 		"mana": "1", 
 		"attack": "2", 
 		"health": "3", 
-		"tribe": "", 
+		"tribe": "Primal", 
 		"rarity": "Basic", 
 		"text": "Has +2 Attack while next to ANY hero." 
 		},
@@ -2689,7 +2689,7 @@
 		"mana": "1", 
 		"attack": "3", 
 		"health": "2", 
-		"tribe": "", 
+		"tribe": "Primal", 
 		"rarity": "Common", 
 		"text": "+2 Movement." 
 		},
@@ -2713,7 +2713,7 @@
 		"mana": "2", 
 		"attack": "1", 
 		"health": "3", 
-		"tribe": "", 
+		"tribe": "Primal", 
 		"rarity": "Common", 
 		"text": "Has +1 Attack while your Hero is a Primal." 
 		},
@@ -2857,7 +2857,7 @@
 		"mana": "3", 
 		"attack": "4", 
 		"health": "4", 
-		"tribe": "", 
+		"tribe": "Primal", 
 		"rarity": "Rare", 
 		"text": "Deep Strike. Warcry: Fear adjacent enemies." 
 		},
@@ -2869,7 +2869,7 @@
 		"mana": "3", 
 		"attack": "3", 
 		"health": "5", 
-		"tribe": "", 
+		"tribe": "Primal", 
 		"rarity": "Legendary", 
 		"text": "Ability (0): Grab a minion within three tiles and teleport it up to three tiles away from where it was." 
 		},
@@ -2905,7 +2905,7 @@
 		"mana": "3", 
 		"attack": "5", 
 		"health": "2", 
-		"tribe": "", 
+		"tribe": "Primal", 
 		"rarity": "Rare", 
 		"text": "Flying." 
 		},
@@ -2917,7 +2917,7 @@
 		"mana": "4", 
 		"attack": "4", 
 		"health": "5", 
-		"tribe": "", 
+		"tribe": "Primal", 
 		"rarity": "Basic", 
 		"text": "Summon this minion next to the enemy hero. Warcry: Deal 2 damage to the enemy hero." 
 		},
@@ -2989,7 +2989,7 @@
 		"mana": "7", 
 		"attack": "2", 
 		"health": "4", 
-		"tribe": "", 
+		"tribe": "Primal", 
 		"rarity": "Legendary", 
 		"text": "Warcry: Give your Primals Poison this turn. Poison." 
 		},
@@ -3001,7 +3001,7 @@
 		"mana": "8", 
 		"attack": "7", 
 		"health": "7", 
-		"tribe": "", 
+		"tribe": "Primal", 
 		"rarity": "Epic", 
 		"text": "Choose a minion. Exile it, then summon this in its place. Cannot Move." 
 		},
