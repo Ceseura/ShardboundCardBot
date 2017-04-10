@@ -32,7 +32,7 @@ colors = {"Neutral": "", "Steelsinger": "(Red)", "Fatekeeper": "(Blue)", "Landsh
 MINION_REPLY_TEMPLATE = '[{0}]({1}) {2} {10} {8} {3}\n\n{4} Mana {5}/{6} {7} - {9}'
 ARTIFACT_REPLY_TEMPLATE = '[{0}]({1}) {2} {10} {8} {3}\n\n{4} Mana 0/{6} {7} - {9}'
 SPELL_REPLY_TEMPLATE = '[{0}]({1}) {2} {7} {5} {3}\n\n{4} Mana - {6}'
-HERO_REPLY TEMPLATE = '[{0}]({1}) {2} {7} {3}\n\n{4}/{5} - {6}'
+HERO_REPLY_TEMPLATE = '[{0}]({1}) {2} {7} {3}\n\n{4}/{5} - {6}'
 SIMPLE_TEMPLATE = "Card: {0}"
 
 
