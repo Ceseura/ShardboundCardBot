@@ -2,6 +2,7 @@ import praw
 import re
 import json
 import datetime
+from credentials import USER_AGENT, CLIENT_ID, CLIENT_SECRET, USERNAME, PASSWORD
 
 starttime = datetime.datetime.now().timestamp()
 
@@ -19,9 +20,6 @@ starttime = datetime.datetime.now().timestamp()
 {10} Color
 '''
 
-## TODO: doesn't respond to comments, only newly submitted posts
-
-
 with open("ShardBound_cards.json") as data_file:
 	data = json.load(data_file)
 
@@ -33,7 +31,7 @@ SPELL_REPLY_TEMPLATE = '[{0}]({1}) {2} {7} {5} {3}\n\n{4} Mana - {6}'
 SIMPLE_TEMPLATE = "Card: {0}"
 
 def main():
-	reddit = praw.Reddit(user_agent='ShardBound Bot v0.1 (by /u/Cephael)', client_id='jOa76OEbDkSGcQ', client_secret='NKL_-ZYPuBqL_oTu5TUPGOpcIXc', username='Cephael', password='elephant1')
+	reddit = praw.Reddit(user_agent=USER_AGENT, client_id=CLIENT_ID, client_secret=CLIENT_SECRET, username=USERNAME, password=PASSWORD)
 
 	subreddit = reddit.subreddit('Alex_is_a_Scrub')
 
