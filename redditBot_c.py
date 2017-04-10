@@ -4,6 +4,8 @@ import json
 import datetime
 from credentials import USER_AGENT, CLIENT_ID, CLIENT_SECRET, USERNAME, PASSWORD
 
+starttime = datetime.datetime.now().timestamp()
+
 # This python script is a reddit bot which responds to submissions 
 # with text formatted like '[[CARD NAME]]' with information about 
 # the card, from www.shardveil.com/cards/. 
@@ -27,11 +29,11 @@ colors = {"Neutral": "", "Steelsinger": "(Red)", "Fatekeeper": "(Blue)", "Landsh
 # {8} Rarity
 # {9} Card Text
 # {10} Color
-MINION_REPLY_TEMPLATE = '[{0}]({1}) {2} {10} {8} {3}\n\n{4} Mana {5}/{6} {7} - {9}'
-ARTIFACT_REPLY_TEMPLATE = '[{0}]({1}) {2} {10} {8} {3}\n\n{4} Mana 0/{6} {7} - {9}'
-SPELL_REPLY_TEMPLATE = '[{0}]({1}) {2} {7} {5} {3}\n\n{4} Mana - {6}'
-HERO_REPLY_TEMPLATE = '[{0}]({1}) {2} {7} {3}\n\n{4}/{5} - {6}'
-SIMPLE_TEMPLATE = "Card: {0}"
+MINION_REPLY_TEMPLATE = '[{0}]({1}) {2} {10} {8} {3}\n\n{4} Mana {5}/{6} {7} - {9}\n\n\n'
+ARTIFACT_REPLY_TEMPLATE = '[{0}]({1}) {2} {10} {8} {3}\n\n{4} Mana 0/{6} {7} - {9}\n\n\n'
+SPELL_REPLY_TEMPLATE = '[{0}]({1}) {2} {7} {5} {3}\n\n{4} Mana - {6}\n\n\n'
+HERO_REPLY_TEMPLATE = '[{0}]({1}) {2} {7} {3}\n\n{4}/{5} - {6}\n\n\n'
+SIMPLE_TEMPLATE = "Card: {0}\n\n\n"
 
 def main():
 	# Initialize the Reddit Client
@@ -60,6 +62,7 @@ def process_comment(comment):
 	cardList = re.findall(pattern, text)
 	print(cardList)
 
+	reply_text = ''
 	for card in cardList:
 		card = card[2:-2]
 		# Make sure the card is valid
@@ -69,8 +72,9 @@ def process_comment(comment):
 			print("Couldn't find", card)
 
 	# Reply
-	print("replying to", comment.author)
-	comment.reply(reply_text)
+	if reply_text is not '':
+		print("replying to", comment.author)
+		comment.reply(reply_text)
 
 def generate_reply(card):
 	if "Melee" in card["type"] or "Ranged" in card["type"]:
@@ -83,7 +87,7 @@ def generate_reply(card):
 		reply = SPELL_REPLY_TEMPLATE.format(card["name"], card["link"], card["faction"], card["type"], card["mana"], card["rarity"], card["text"], colors[card["faction"]])
 
 	elif "Hero" in card["type"]:
-		reply = HERO_REPLY_TEMPLATE.format(card["name"], card["link"], card["faction"], card["type"], card["attack"], card["health"], card["text"], color[card["faction"]])
+		reply = HERO_REPLY_TEMPLATE.format(card["name"], card["link"], card["faction"], card["type"], card["attack"], card["health"], card["text"], colors[card["faction"]])
 
 	return reply
 	#return SIMPLE_TEMPLATE.format("blarp")
