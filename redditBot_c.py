@@ -1,0 +1,80 @@
+import praw
+import re
+import json
+import datetime
+
+starttime = datetime.datetime.now().timestamp()
+
+'''
+{0} Card Name
+{1} Image Link
+{2} Faction
+{3} Type (Range/Melee)
+{4} Mana Cost
+{5} Attack Value
+{6} Health Value
+{7} Tribe
+{8} Rarity
+{9} Card Text
+{10} Color
+'''
+
+## TODO: doesn't respond to comments, only newly submitted posts
+
+
+with open("ShardBound_cards.json") as data_file:
+	data = json.load(data_file)
+
+colors = {"Neutral": "", "Steelsinger": "(Red)", "Fatekeeper": "(Blue)", "Landshaper": "(Green)", "Packrunner": "(Yellow)", "Wayfinder": "(Orange)", "Bloodbinder": "(Purple)"}
+
+MINION_REPLY_TEMPLATE = '[{0}]({1}) {2} {10} {8} {3}\n\n{4} Mana {5}/{6} {7} - {9}'
+ARTIFACT_REPLY_TEMPLATE = '[{0}]({1}) {2} {10} {8} {3}\n\n{4} Mana 0/{6} {7} - {9}'
+SPELL_REPLY_TEMPLATE = '[{0}]({1}) {2} {7} {5} {3}\n\n{4} Mana - {6}'
+SIMPLE_TEMPLATE = "Card: {0}"
+
+def main():
+	reddit = praw.Reddit(user_agent='ShardBound Bot v0.1 (by /u/Cephael)', client_id='jOa76OEbDkSGcQ', client_secret='NKL_-ZYPuBqL_oTu5TUPGOpcIXc', username='Cephael', password='elephant1')
+
+	subreddit = reddit.subreddit('Alex_is_a_Scrub')
+
+	for comment in subreddit.stream.comments():
+		process_comment(comment)
+
+
+def process_comment(comment):
+	# Don't do anything if the comment was posted before the bot was started
+	if starttime > comment.created_utc:
+		print("skipped:", starttime, ">", comment.created_utc)
+		return
+
+	# Normalize text to lowercase
+	text = comment.body.lower()
+	print(text)
+	pattern = re.compile('\[\[[a-z0-9\' ]+\]\]')
+	cardList = re.findall(pattern, text)
+	print(cardList)
+
+	for card in cardList:
+		card = card[2:-2]
+		if card in data:
+			reply_text = generate_reply(data[card])
+			print("replying to", comment.author)
+			comment.reply(reply_text)
+		else:
+			print("Couldn't find", card)
+
+def generate_reply(card):
+	if "Melee" in card["type"] or "Ranged" in card["type"]:
+		reply = MINION_REPLY_TEMPLATE.format(card["name"], card["link"], card["faction"], card["type"], card["mana"], card["attack"], card["health"], card["tribe"], card["rarity"], card["text"], colors[card["faction"]])
+
+	if "Artifact" in card["type"]:
+		reply = MINION_REPLY_TEMPLATE.format(card["name"], card["link"], card["faction"], card["type"], card["mana"], 0, card["health"], card["tribe"], card["rarity"], card["text"], colors[card["faction"]])
+
+	if "Spell" in card["type"]:
+		reply = SPELL_REPLY_TEMPLATE.format(card["name"], card["link"], card["faction"], card["type"], card["mana"], card["rarity"], card["text"], colors[card["faction"]])
+
+	return reply
+	#return SIMPLE_TEMPLATE.format("blarp")
+
+if __name__ == '__main__':
+	main()
