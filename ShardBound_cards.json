@@ -468,7 +468,7 @@
 		"type": "Melee Minion", 
 		"mana": "3", 
 		"attack": "3", 
-		"health": "6", 
+		"health": "5", 
 		"tribe": "", 
 		"rarity": "Epic", 
 		"text": "Adjacent allies have +1 Attack." 
@@ -607,6 +607,19 @@
 		},
 	"bellowing giant": {
 		"name": "Bellowing Giant", 
+		"link": "https://www.shardveil.com/images/cards/placeholder/bellowing-giant.png", 
+		"faction": "Neutral", 
+		"type": "Melee Minion", 
+		"mana": "4", 
+		"attack": "4", 
+		"health": "4", 
+		"tribe": "", 
+		"rarity": "Epic", 
+		"text": "Warcry: Change the Movement of all enemy minions to 1 for a full round.",
+		"TODO": "delete this, name was changed to 'stormbell adept'"
+		},
+	"stormbell adept": {
+		"name": "Stormbell Adept", 
 		"link": "https://www.shardveil.com/images/cards/placeholder/bellowing-giant.png", 
 		"faction": "Neutral", 
 		"type": "Melee Minion", 
@@ -1066,7 +1079,7 @@
 		"link": "https://www.shardveil.com/images/cards/placeholder/high-shepherd-katell.png", 
 		"faction": "Neutral", 
 		"type": "Melee Minion", 
-		"mana": "7", 
+		"mana": "8", 
 		"attack": "7", 
 		"health": "7", 
 		"tribe": "", 

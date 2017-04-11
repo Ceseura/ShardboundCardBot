@@ -2,7 +2,7 @@ import praw
 import re
 import json
 import datetime
-from credentials import USER_AGENT, CLIENT_ID, CLIENT_SECRET, USERNAME, PASSWORD
+from credentials import USER_AGENT2, CLIENT_ID2, CLIENT_SECRET2, USERNAME, PASSWORD
 
 starttime = datetime.datetime.now().timestamp()
 
@@ -37,7 +37,7 @@ SIMPLE_TEMPLATE = "Card: {0}\n\n\n"
 
 def main():
 	# Initialize the Reddit Client
-	reddit = praw.Reddit(user_agent=USER_AGENT, client_id=CLIENT_ID, client_secret=CLIENT_SECRET, username=USERNAME, password=PASSWORD)
+	reddit = praw.Reddit(user_agent=USER_AGENT2, client_id=CLIENT_ID2, client_secret=CLIENT_SECRET2, username=USERNAME, password=PASSWORD)
 
 	# Which subreddit?
 	subreddit = reddit.subreddit('Alex_is_a_Scrub')
@@ -58,7 +58,7 @@ def process_comment(comment):
 	print(text)
 
 	# Search for [[CARD NAME]] patterns
-	pattern = re.compile('\[\[[a-z0-9\' ]+\]\]')
+	pattern = re.compile('\[\[[a-z0-9\' !-]+\]\]')
 	cardList = re.findall(pattern, text)
 	print(cardList)
 

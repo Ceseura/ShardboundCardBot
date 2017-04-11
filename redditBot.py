@@ -59,7 +59,7 @@ def process_submission(submission):
 	print(text)
 
 	# Search for [[CARD NAME]] patterns
-	pattern = re.compile('\[\[[a-z0-9 ]+\]\]')
+	pattern = re.compile('\[\[[a-z0-9\' !-]+\]\]')
 	cardList = re.findall(pattern, text)
 	print(cardList)
 
