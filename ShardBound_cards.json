@@ -29,6 +29,18 @@
 		"rarity": "Basic", 
 		"text": "Deathhowl: Add a Vengeful Veteran to your hand." 
 		},
+	"lad": {
+		"name": "Novice Knight", 
+		"link": "https://www.shardveil.com/images/cards/placeholder/novice-knight.png", 
+		"faction": "Neutral", 
+		"type": "Melee Minion", 
+		"mana": "1", 
+		"attack": "2", 
+		"health": "2", 
+		"tribe": "", 
+		"rarity": "Basic", 
+		"text": "Deathhowl: Add a Vengeful Veteran to your hand." 
+		},
 	"phalanx fighter": {
 		"name": "Phalanx Fighter", 
 		"link": "https://www.shardveil.com/images/cards/placeholder/phalanx-fighter.png", 
@@ -1098,6 +1110,18 @@
 		"rarity": "Basic", 
 		"text": "Flying." 
 		},
+	"space lobster": {
+		"name": "Shard Harrier", 
+		"link": "https://www.shardveil.com/images/cards/placeholder/shard-harrier.png", 
+		"faction": "Neutral", 
+		"type": "Melee Minion", 
+		"mana": "7", 
+		"attack": "6", 
+		"health": "8", 
+		"tribe": "", 
+		"rarity": "Basic", 
+		"text": "Flying." 
+		},
 	"shifting nightmare": {
 		"name": "Shifting Nightmare", 
 		"link": "https://www.shardveil.com/images/cards/placeholder/shifting-nightmare.png", 
@@ -1795,6 +1819,18 @@
 		"text": "After this minion deals damage, deal its attack damage to another random enemy." 
 		},
 	"quantum turnkey": {
+		"name": "Quantum Turnkey", 
+		"link": "https://www.shardveil.com/images/cards/placeholder/quantum-turnkey.png", 
+		"faction": "Fatekeeper", 
+		"type": "Ranged Minion", 
+		"mana": "4", 
+		"attack": "3", 
+		"health": "5", 
+		"tribe": "", 
+		"rarity": "Basic", 
+		"text": "Whenever this minion would kill a minion, Bounce it instead. It costs 2 more." 
+		},
+	"turkey": {
 		"name": "Quantum Turnkey", 
 		"link": "https://www.shardveil.com/images/cards/placeholder/quantum-turnkey.png", 
 		"faction": "Fatekeeper", 
