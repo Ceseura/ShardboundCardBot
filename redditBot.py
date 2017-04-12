@@ -41,7 +41,7 @@ def main():
 	reddit = praw.Reddit(user_agent=USER_AGENT, client_id=CLIENT_ID, client_secret=CLIENT_SECRET, username=USERNAME, password=PASSWORD)
 
 	# Which subreddit?
-	subreddit = reddit.subreddit('Alex_is_a_Scrub')
+	subreddit = reddit.subreddit('Shardbound')
 
 	# Do stuff
 	for submission in subreddit.stream.submissions():

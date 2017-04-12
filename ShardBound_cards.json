@@ -1518,8 +1518,8 @@
 		"rarity": "Rare", 
 		"text": " Upgrade (1): +2 Attack. Upgrade (2): Splash." 
 		},
-	"zieger 1": {
-		"name": "Zieger 1", 
+	"zieger-1": {
+		"name": "Zieger-1", 
 		"link": "https://www.shardveil.com/images/cards/placeholder/zieger-1.png", 
 		"faction": "Steelsinger", 
 		"type": "Melee Minion", 
@@ -2802,8 +2802,8 @@
 		"rarity": "Basic", 
 		"text": "Deal 2 damage to a unit next to your hero, then summon a Spirit Primal next to it." 
 		},
-	"to me": {
-		"name": "To Me", 
+	"to me!": {
+		"name": "To Me!", 
 		"link": "https://www.shardveil.com/images/cards/placeholder/to-me.png", 
 		"faction": "Packrunner", 
 		"type": "Spell", 

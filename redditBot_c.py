@@ -40,7 +40,7 @@ def main():
 	reddit = praw.Reddit(user_agent=USER_AGENT2, client_id=CLIENT_ID2, client_secret=CLIENT_SECRET2, username=USERNAME, password=PASSWORD)
 
 	# Which subreddit?
-	subreddit = reddit.subreddit('Alex_is_a_Scrub')
+	subreddit = reddit.subreddit('Shardbound')
 
 	# Do stuff
 	for comment in subreddit.stream.comments():
