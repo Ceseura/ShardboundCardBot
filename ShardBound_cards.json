@@ -29,6 +29,18 @@
 		"rarity": "Basic", 
 		"text": "Deathhowl: Add a Vengeful Veteran to your hand." 
 		},
+	"vengeful veteran": {
+		"name": "Vengeful Veteran",
+		"link": "https://www.shardveil.com/images/cards/extra/vengeful-veteran.png", 
+		"faction": "Neutral", 
+		"type": "Melee Minion",
+		"mana": "3",
+		"attack": "4",
+		"health": "4",
+		"tribe": "",
+		"rarity": "Token",
+		"text": ""
+	},
 	"lad": {
 		"name": "Novice Knight", 
 		"link": "https://www.shardveil.com/images/cards/placeholder/novice-knight.png", 
@@ -113,6 +125,18 @@
 		"rarity": "Common", 
 		"text": "Deathhowl: Summon a Bonded Soldier in its place." 
 		},
+	"bonded soldier": {
+		"name": "Bonded Soldier",
+		"link": "https://www.shardveil.com/images/cards/extra/bonded-soldier.png",
+		"faction": "Neutral",
+		"type": "Melee Minion",
+		"mana": "1",
+		"attack": "2", 
+		"health": "2", 
+		"tribe": "", 
+		"rarity": "Token", 
+		"text": "Charge." 
+	},
 	"buccaneer": {
 		"name": "Buccaneer", 
 		"link": "https://www.shardveil.com/images/cards/placeholder/buccaneer.png", 
@@ -906,6 +930,18 @@
 		"rarity": "Rare", 
 		"text": "Ability (0): Summon a Rat in ANY open tile." 
 		},
+	"rat": {
+		"name": "Rat", 
+		"link": "https://www.shardveil.com/images/cards/extra/rat.png", 
+		"faction": "Neutral", 
+		"type": "Melee Minion", 
+		"mana": "1", 
+		"attack": "1", 
+		"health": "1", 
+		"tribe": "", 
+		"rarity": "Token", 
+		"text": "" 
+		},
 	"soul shifter": {
 		"name": "Soul Shifter", 
 		"link": "https://www.shardveil.com/images/cards/placeholder/soul-shifter.png", 
@@ -965,6 +1001,18 @@
 		"tribe": "", 
 		"rarity": "Legendary", 
 		"text": "Bloodtoll: Destroy two of your mana crystals. Summon two Bodyguards next to this minion at random." 
+		},
+	"bodyguard": {
+		"name": "Bodyguard", 
+		"link": "https://www.shardveil.com/images/cards/extra/bodyguard.png", 
+		"faction": "Neutral", 
+		"type": "Melee Minion", 
+		"mana": "2", 
+		"attack": "4", 
+		"health": "4", 
+		"tribe": "", 
+		"rarity": "Token", 
+		"text": "" 
 		},
 	"luminary shaman": {
 		"name": "Luminary Shaman", 
@@ -1074,6 +1122,30 @@
 		"rarity": "Legendary", 
 		"text": "Deathhowl: Summon Moon and Star at random locations." 
 		},
+	"moon": {
+		"name": "Moon", 
+		"link": "https://www.shardveil.com/images/cards/extra/moon.png",
+		"faction": "Neutral", 
+		"type": "Melee Minion", 
+		"mana": "2", 
+		"attack": "0", 
+		"health": "3", 
+		"tribe": "", 
+		"rarity": "Token", 
+		"text": "After Star moves next to a friendly Moon, destroy this unit and transform Moon into Astral Phoenix." 
+		},
+	"star": {
+		"name": "Star", 
+		"link": "https://www.shardveil.com/images/cards/extra/star.png",
+		"faction": "Neutral", 
+		"type": "Melee Minion", 
+		"mana": "2", 
+		"attack": "0", 
+		"health": "3", 
+		"tribe": "", 
+		"rarity": "Token", 
+		"text": "After Star moves next to a friendly Moon, destroy this unit and transform Moon into Astral Phoenix." 
+		},
 	"axelle the unbroken": {
 		"name": "Axelle The Unbroken", 
 		"link": "https://www.shardveil.com/images/cards/placeholder/axelle-the-unbroken.png", 
@@ -1182,6 +1254,18 @@
 		"rarity": "Legendary", 
 		"text": "Whenever this minion damages a minion, transform it into a Crystal Servant that you control." 
 		},
+	"crystal servant": {
+		"name": "Crystal Servant", 
+		"link": "https://www.shardveil.com/images/cards/extra/crystal-servant.png", 
+		"faction": "Neutral", 
+		"type": "Melee Minion", 
+		"mana": "1", 
+		"attack": "3", 
+		"health": "3", 
+		"tribe": "", 
+		"rarity": "Token", 
+		"text": "" 
+		},
 	"director petra": {
 		"name": "Director Petra", 
 		"link": "https://www.shardveil.com/images/cards/placeholder/director-petra.png", 
@@ -1192,7 +1276,19 @@
 		"health": "25", 
 		"tribe": "", 
 		"rarity": "Basic", 
-		"text": "Ability (0): Add a Modular Gizmo to your hand." 
+		"text": "Ability (2): Add a Modular Gizmo to your hand." 
+		},
+	"modular gizmo": {
+		"name": "Modular Gizmo", 
+		"link": "https://www.shardveil.com/images/cards/extra/modular-gizmo.png", 
+		"faction": "Steelsinger", 
+		"type": "Melee Minion", 
+		"mana": "1", 
+		"attack": "2", 
+		"health": "1", 
+		"tribe": "", 
+		"rarity": "Token", 
+		"text": "Has to random Upgrades!" 
 		},
 	"gravwell exosuit": {
 		"name": "Gravwell Exosuit", 
@@ -1265,6 +1361,18 @@
 		"tribe": "", 
 		"rarity": "Basic", 
 		"text": "Deathhowl: Put a Tune Up card in your hand." 
+		},
+	"tune up": {
+		"name": "Tune Up", 
+		"link": "https://www.shardveil.com/images/cards/extra/tune-up.png", 
+		"faction": "Steelsinger", 
+		"type": "Spell", 
+		"mana": "1", 
+		"attack": "", 
+		"health": "", 
+		"tribe": "", 
+		"rarity": "Token", 
+		"text": "Give a friendly minion +1/+1." 
 		},
 	"defense matrix": {
 		"name": "Defense Matrix", 
@@ -1420,7 +1528,19 @@
 		"health": "7", 
 		"tribe": "", 
 		"rarity": "Common", 
-		"text": "Ability (0): Summon a Barricade on a tile in line of sight." 
+		"text": "Ability (1): Summon a Barricade on a tile in line of sight." 
+		},
+	"barricade": {
+		"name": "Barricade", 
+		"link": "https://www.shardveil.com/images/cards/extra/barricade.png", 
+		"faction": "Steelsinger", 
+		"type": "Artifact Minion", 
+		"mana": "1", 
+		"attack": "", 
+		"health": "2", 
+		"tribe": "", 
+		"rarity": "Token", 
+		"text": "" 
 		},
 	"creation specialist": {
 		"name": "Creation Specialist", 
@@ -1458,6 +1578,18 @@
 		"rarity": "Epic", 
 		"text": "Summon two Nanobots in random tiles next to an ally." 
 		},
+	"nanobots": {
+		"name": "Nanobots", 
+		"link": "https://www.shardveil.com/images/cards/extra/nanobots.png", 
+		"faction": "Steelsinger", 
+		"type": "Melee Minion", 
+		"mana": "2", 
+		"attack": "1", 
+		"health": "3", 
+		"tribe": "", 
+		"rarity": "Token", 
+		"text": "At the end of your turn, restore 2 Health to a random adjacent injured ally." 
+		},
 	"targeting frame": {
 		"name": "Targeting Frame", 
 		"link": "https://www.shardveil.com/images/cards/placeholder/targeting-frame.png", 
@@ -1493,6 +1625,18 @@
 		"tribe": "", 
 		"rarity": "Common", 
 		"text": "Deathhowl: Summon a Replacement Mech in its place." 
+		},
+	"replacement mech": {
+		"name": "Replacement Mech", 
+		"link": "https://www.shardveil.com/images/cards/extra/replacement-mech.png", 
+		"faction": "Steelsinger", 
+		"type": "Melee Minion", 
+		"mana": "2", 
+		"attack": "3", 
+		"health": "4", 
+		"tribe": "", 
+		"rarity": "Token", 
+		"text": "" 
 		},
 	"scrap": {
 		"name": "Scrap", 
@@ -1554,6 +1698,18 @@
 		"rarity": "Legendary", 
 		"text": "Deathhowl: Summon Vaast, the Last Pilot in its place." 
 		},
+	"vaast, the last pilot": {
+		"name": "Vaast, the Last Pilot", 
+		"link": "https://www.shardveil.com/images/cards/extra/vaast,-the-last-pilot.png", 
+		"faction": "Steelsinger", 
+		"type": "Ranged Minion", 
+		"mana": "2", 
+		"attack": "1", 
+		"health": "3", 
+		"tribe": "", 
+		"rarity": "Token", 
+		"text": "Charge. After two rounds, transform into Zieger-1." 
+		},
 	"professor mori": {
 		"name": "Professor Mori", 
 		"link": "https://www.shardveil.com/images/cards/placeholder/professor-mori.png", 
@@ -1577,6 +1733,18 @@
 		"tribe": "", 
 		"rarity": "Basic", 
 		"text": "Deathhowl: Add a Precognition to your hand." 
+		},
+	"precognition": {
+		"name": "Precognition", 
+		"link": "https://www.shardveil.com/images/cards/extra/precognition.png", 
+		"faction": "Fatekeeper", 
+		"type": "spell", 
+		"mana": "1", 
+		"attack": "", 
+		"health": "", 
+		"tribe": "", 
+		"rarity": "Token", 
+		"text": "Look at the top 3 cards of your deck. Choose 1, put it on top of your deck, and shuffle the others." 
 		},
 	"chronoslap": {
 		"name": "Chronoslap", 
@@ -1734,6 +1902,18 @@
 		"rarity": "Basic", 
 		"text": "Choose a tile and teleport your hero to it, then summon an Anomaly on the departure tile." 
 		},
+	"anomaly": {
+		"name": "Anomaly", 
+		"link": "https://www.shardveil.com/images/cards/extra/anomaly.png", 
+		"faction": "Fatekeeper", 
+		"type": "Melee Minion", 
+		"mana": "2", 
+		"attack": "3", 
+		"health": "3", 
+		"tribe": "", 
+		"rarity": "Token", 
+		"text": "" 
+		},
 	"rift trickster": {
 		"name": "Rift Trickster", 
 		"link": "https://www.shardveil.com/images/cards/placeholder/rift-trickster.png", 
@@ -1852,7 +2032,19 @@
 		"health": "", 
 		"tribe": "", 
 		"rarity": "Legendary", 
-		"text": "Your hero ability becomes Super Time Skip." 
+		"text": "Your hero ability becomes Super Time Skip: Teleport a minion in line of sight up to two tiles. Summon a Mini-Anomaly where it was." 
+		},
+	"mini-anomaly": {
+		"name": "Mini-Anomaly", 
+		"link": "https://www.shardveil.com/images/cards/extra/mini-anomaly.png", 
+		"faction": "Fatekeeper", 
+		"type": "Melee Minion", 
+		"mana": "1", 
+		"attack": "2", 
+		"health": "1", 
+		"tribe": "", 
+		"rarity": "Token", 
+		"text": "" 
 		},
 	"tease fate": {
 		"name": "Tease Fate", 
@@ -2104,7 +2296,7 @@
 		"health": "5", 
 		"tribe": "Seedling", 
 		"rarity": "Common", 
-		"text": "Deep Strike At the end of each turn, create 3 Blightspore tiles next to this unit or its existing tiles." 
+		"text": "Deep Strike At the end of each turn, create 3 Blightspore tiles next to this unit or its existing tiles. Blightspore Tile: At the end of each turn, ANY unit here takes 2 damage. Removed when the Seedling is destroyed." 
 		},
 	"concord artisan": {
 		"name": "Concord Artisan", 
@@ -2226,6 +2418,18 @@
 		"rarity": "Basic", 
 		"text": "Destroy a Boulder next to your hero. Summon two Furious Crags in random tiles next to it." 
 		},
+	"furious crag": {
+		"name": "Furious Crag", 
+		"link": "https://www.shardveil.com/images/cards/extra/furious-crag.png", 
+		"faction": "Landshaper", 
+		"type": "Melee Minion", 
+		"mana": "2", 
+		"attack": "4", 
+		"health": "4", 
+		"tribe": "", 
+		"rarity": "Token", 
+		"text": "" 
+		},
 	"the lifespark": {
 		"name": "The Lifespark", 
 		"link": "https://www.shardveil.com/images/cards/placeholder/the-lifespark.png", 
@@ -2261,6 +2465,18 @@
 		"tribe": "", 
 		"rarity": "Basic", 
 		"text": "Transform an enemy minion into a Lifelike Statue that you control." 
+		},
+	"lifelike statue": {
+		"name": "Lifelike Statue", 
+		"link": "https://www.shardveil.com/images/cards/extra/lifelike-statue.png", 
+		"faction": "Landshaper", 
+		"type": "Artifact Minion", 
+		"mana": "2", 
+		"attack": "", 
+		"health": "8", 
+		"tribe": "", 
+		"rarity": "Token", 
+		"text": "Can move as if it wasn't an artifact minion. -2 Movement." 
 		},
 	"precise detonation": {
 		"name": "Precise Detonation", 
@@ -2344,7 +2560,7 @@
 		"health": "4", 
 		"tribe": "", 
 		"rarity": "Rare", 
-		"text": "At the end of each turn, create five Flesh tiles next to this unit or its existing tiles." 
+		"text": "At the end of each turn, create five Flesh tiles next to this unit or its existing tiles. Flesh Tile: Your minions may be summoned here. Removed when the Cytoplast is destroyed." 
 		},
 	"dark traveler": {
 		"name": "Dark Traveler", 
@@ -2381,6 +2597,18 @@
 		"tribe": "", 
 		"rarity": "Basic", 
 		"text": "Summon four Thralls at random locations next to your hero." 
+		},
+	"thrall": {
+		"name": "Thrall", 
+		"link": "https://www.shardveil.com/images/cards/extra/thrall.png", 
+		"faction": "Bloodbinder", 
+		"type": "Melee Minion", 
+		"mana": "1", 
+		"attack": "1", 
+		"health": "1", 
+		"tribe": "", 
+		"rarity": "Token", 
+		"text": "" 
 		},
 	"cannibal": {
 		"name": "Cannibal", 
@@ -2994,6 +3222,18 @@
 		"rarity": "Basic", 
 		"text": "Whenever this minion deals damage, summon a Spirit Primal on a tile next to the target." 
 		},
+	"spirit primal": {
+		"name": "Spirit Primal", 
+		"link": "https://www.shardveil.com/images/cards/placeholder/pack-lord.png", 
+		"faction": "Packrunner", 
+		"type": "Melee Minion", 
+		"mana": "1", 
+		"attack": "2", 
+		"health": "2", 
+		"tribe": "Primal", 
+		"rarity": "Token", 
+		"text": "" 
+		},
 	"roar earburst": {
 		"name": "Roar Earburst", 
 		"link": "https://www.shardveil.com/images/cards/placeholder/roar-earburst.png", 
@@ -3210,6 +3450,18 @@
 		"rarity": "Basic", 
 		"text": "Summon two Winged Blades next to your hero." 
 		},
+	"winged blades": {
+		"name": "Winged Blades", 
+		"link": "https://www.shardveil.com/images/cards/extra/winged-blade.png", 
+		"faction": "Wayfinder", 
+		"type": "Melee Minion", 
+		"mana": "1", 
+		"attack": "2", 
+		"health": "1", 
+		"tribe": "", 
+		"rarity": "Token", 
+		"text": "Flying." 
+		},
 	"vigil keeper": {
 		"name": "Vigil Keeper", 
 		"link": "https://www.shardveil.com/images/cards/placeholder/vigil-keeper.png", 
@@ -3281,6 +3533,18 @@
 		"tribe": "", 
 		"rarity": "Common", 
 		"text": "Whenever this unit deals damage, add a Lightspear to your hand." 
+		},
+	"lightspear": {
+		"name": "Lightspear", 
+		"link": "https://www.shardveil.com/images/cards/extra/lightspear.png", 
+		"faction": "Wayfinder", 
+		"type": "Spell", 
+		"mana": "1", 
+		"attack": "", 
+		"health": "", 
+		"tribe": "", 
+		"rarity": "Token", 
+		"text": "Deal 2 damage to an enemy minion in line of sight." 
 		},
 	"radiant lance": {
 		"name": "Radiant Lance", 
