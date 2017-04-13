@@ -3,7 +3,7 @@ import re  		# Regex
 import json 	# Read.json files
 import datetime # Date, time
 import sys 		# Command line arguments
-from testCredentials import USER_AGENT, CLIENT_ID, CLIENT_SECRET, USERNAME, PASSWORD, USER_AGENT2, CLIENT_ID2, CLIENT_SECRET2 	# Auth data for Reddit API
+from credentials import USER_AGENT, CLIENT_ID, CLIENT_SECRET, USERNAME, PASSWORD, USER_AGENT2, CLIENT_ID2, CLIENT_SECRET2 	# Auth data for Reddit API
 
 # TODO: Disclaimer/info at bottom
 # TODO: Aux cards "Vengeful Knight"
