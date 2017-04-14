@@ -102,6 +102,8 @@ def process_item(item, subMode):
 		else:
 			print("Couldn't find", card)
 
+	reply_text += REPLY_FOOTER
+	
 	# Reply
 	if subMode:
 		reply_target = item.title
@@ -128,7 +130,7 @@ def generate_reply(card):
 	else:
 		reply = SIMPLE_TEMPLATE.format(card["name"])
 
-	return reply + REPLY_FOOTER
+	return reply
 
 if __name__ == '__main__':
 	main()
