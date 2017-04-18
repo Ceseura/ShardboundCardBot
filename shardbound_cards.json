@@ -4,6 +4,8 @@
 	"_info": "Feel free to use this file for your own purposes, as long as you credit me",
 	"_credits": "All data taken from www.shardveil.com",
 	"_version": "Version 1.0, up to date as of 10 April 2017",
+	"_TODO": "Fix picture links for Idol of Kinship, Rites Reader, Tribe Warrior, Ancient Caller, To me, Thundering Giant, Swift Strike, Pack Lord, Menagerie, Wolf Primal, Shade, Dancer, Dark Traveler",
+	"_TODO2": "Add tokens for Kraken, Venerated Champion, Vardan's blessings, vein waker, angry stones",
 
 	"arcanum steward": {
 		"name": "Arcanum Steward", 
@@ -179,7 +181,7 @@
 		"faction": "Neutral", 
 		"type": "Melee Minion", 
 		"mana": "2", 
-		"attack": "4", 
+		"attack": "3", 
 		"health": "3", 
 		"tribe": "", 
 		"rarity": "Common", 
@@ -348,7 +350,7 @@
 		"type": "Melee Minion", 
 		"mana": "2", 
 		"attack": "3", 
-		"health": "4", 
+		"health": "3", 
 		"tribe": "", 
 		"rarity": "Common", 
 		"text": "Warcry: Fear a minion." 
@@ -640,19 +642,6 @@
 		"tribe": "", 
 		"rarity": "Basic", 
 		"text": "Warcry: Give a friendly minion +3 Health or +3 Attack at random." 
-		},
-	"bellowing giant": {
-		"name": "Bellowing Giant", 
-		"link": "https://www.shardveil.com/images/cards/placeholder/bellowing-giant.png", 
-		"faction": "Neutral", 
-		"type": "Melee Minion", 
-		"mana": "4", 
-		"attack": "4", 
-		"health": "4", 
-		"tribe": "", 
-		"rarity": "Epic", 
-		"text": "Warcry: Change the Movement of all enemy minions to 1 for a full round.",
-		"TODO": "delete this, name was changed to 'stormbell adept'"
 		},
 	"stormbell adept": {
 		"name": "Stormbell Adept", 
@@ -1228,7 +1217,7 @@
 		"health": "6", 
 		"tribe": "", 
 		"rarity": "Legendary", 
-		"text": "Warcry: Destroy ALL minions that cost 2 or less." 
+		"text": "Destroy all enemy minions within 2 tiles that cost 2 or less." 
 		},
 	"tinker master": {
 		"name": "Tinker Master", 
@@ -2963,9 +2952,9 @@
 		"link": "https://www.shardveil.com/images/cards/placeholder/wolf-primal.png", 
 		"faction": "Packrunner", 
 		"type": "Melee Minion", 
-		"mana": "1", 
-		"attack": "3", 
-		"health": "2", 
+		"mana": "2", 
+		"attack": "4", 
+		"health": "3", 
 		"tribe": "Primal", 
 		"rarity": "Common", 
 		"text": "+2 Movement." 
@@ -2975,12 +2964,12 @@
 		"link": "https://www.shardveil.com/images/cards/placeholder/ancient-caller.png", 
 		"faction": "Packrunner", 
 		"type": "Melee Minion", 
-		"mana": "2", 
+		"mana": "3", 
 		"attack": "2", 
 		"health": "2", 
 		"tribe": "", 
 		"rarity": "Common", 
-		"text": "Deathhowl: Draw two random Primals from your deck." 
+		"text": "Deathhowl: Summon 2 Spirit Primals next to this minion." 
 		},
 	"eagle primal": {
 		"name": "Eagle Primal", 
@@ -3006,8 +2995,8 @@
 		"rarity": "Basic", 
 		"text": "Dash in a line, dealing 2 damage to enemies passed through." 
 		},
-	"idol of reckoning": {
-		"name": "Idol Of Reckoning", 
+	"idol of kinship": {
+		"name": "Idol Of Kinship", 
 		"link": "https://www.shardveil.com/images/cards/placeholder/idol-of-reckoning.png", 
 		"faction": "Packrunner", 
 		"type": "Artifact Minion", 
@@ -3016,7 +3005,7 @@
 		"health": "4", 
 		"tribe": "", 
 		"rarity": "Common", 
-		"text": "Whenever a friendly minion is summoned, lose 1 Health and give that minion +1/+1." 
+		"text": "After you summon a non-Primal minion, lose 1 health and summon a Spirit Primal next to it." 
 		},
 	"raised by primals": {
 		"name": "Raised By Primals", 
@@ -3059,12 +3048,12 @@
 		"link": "https://www.shardveil.com/images/cards/placeholder/swift-strike.png", 
 		"faction": "Packrunner", 
 		"type": "Spell", 
-		"mana": "2", 
+		"mana": "3", 
 		"attack": "", 
 		"health": "", 
 		"tribe": "", 
 		"rarity": "Basic", 
-		"text": "Deal 2 damage to a unit next to your hero, then summon a Spirit Primal next to it." 
+		"text": "Deal 2 damage to a unit next to your hero, then summon 2 Spirit Primals next to it." 
 		},
 	"to me!": {
 		"name": "To Me!", 
@@ -3076,19 +3065,19 @@
 		"health": "", 
 		"tribe": "", 
 		"rarity": "Rare", 
-		"text": "Moves up to three random friendly minions to random tiles next to your hero." 
+		"text": "Charm all friendly minions." 
 		},
 	"tribe warrior": {
 		"name": "Tribe Warrior", 
 		"link": "https://www.shardveil.com/images/cards/placeholder/tribe-warrior.png", 
 		"faction": "Packrunner", 
 		"type": "Melee Minion", 
-		"mana": "2", 
-		"attack": "4", 
-		"health": "3", 
+		"mana": "3", 
+		"attack": "3", 
+		"health": "6", 
 		"tribe": "", 
 		"rarity": "Common", 
-		"text": "Warcry: If you control a Primal, gain +1/+1." 
+		"text": "After you summon a minion, deal 1 damage to a random adjacent enemy." 
 		},
 	"alpha packmaster": {
 		"name": "Alpha Packmaster", 
@@ -3102,17 +3091,17 @@
 		"rarity": "Rare", 
 		"text": "After you summon a minion, give it +1 Attack." 
 		},
-	"beloved trainer": {
-		"name": "Beloved Trainer", 
+	"rites reader": {
+		"name": "Rites Reader", 
 		"link": "https://www.shardveil.com/images/cards/placeholder/beloved-trainer.png", 
 		"faction": "Packrunner", 
 		"type": "Melee Minion", 
-		"mana": "3", 
-		"attack": "5", 
-		"health": "4", 
+		"mana": "2", 
+		"attack": "3", 
+		"health": "3", 
 		"tribe": "", 
 		"rarity": "Common", 
-		"text": "Deathhowl: Give all friendly minions +1/+1." 
+		"text": "Warcry: Draw a card for each injured enemy." 
 		},
 	"cut down": {
 		"name": "Cut Down", 
@@ -3217,7 +3206,7 @@
 		"type": "Ranged Minion", 
 		"mana": "4", 
 		"attack": "2", 
-		"health": "4", 
+		"health": "5", 
 		"tribe": "", 
 		"rarity": "Basic", 
 		"text": "Whenever this minion deals damage, summon a Spirit Primal on a tile next to the target." 
@@ -3263,7 +3252,7 @@
 		"link": "https://www.shardveil.com/images/cards/placeholder/menagerie.png", 
 		"faction": "Packrunner", 
 		"type": "Spell", 
-		"mana": "7", 
+		"mana": "6", 
 		"attack": "", 
 		"health": "", 
 		"tribe": "", 

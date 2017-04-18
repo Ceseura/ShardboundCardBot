@@ -10,8 +10,6 @@ from credentials import USERNAME, PASSWORD, \
 		USER_AGENT2_DEBUG, CLIENT_ID2_DEBUG, CLIENT_SECRET2_DEBUG 	
 		# Auth data for Reddit API
 
-#TODO: Token cards not yet included: Kraken, Venerated Champion, Vardan's blessings, vein waker, 
-
 starttime = datetime.datetime.now().timestamp()
 
 # This python script is a reddit bot which responds to submissions 
@@ -128,7 +126,6 @@ def process_item(item, subMode, filename):
 	# Search for [[CARD NAME]] patterns
 	pattern = re.compile('\[\[[a-z0-9,\' !-]+\]\]')
 	cardList = re.findall(pattern, text)
-	print(cardList)
 
 	logfile = open(filename, 'a')
 
@@ -148,7 +145,6 @@ def process_item(item, subMode, filename):
 			reply_text += generate_reply(data[card])
 		else:
 			logfile.write("Couldn't find {}\n".format(card))
-			print("Couldn't find", card)
 
 	logfile.close()
 
