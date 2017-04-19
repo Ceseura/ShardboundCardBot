@@ -3,8 +3,10 @@ const credentials = require('./credentials.js')
 const Discord = require('discord.js')
 const fs = require('fs')
 
-ACTIVE_CHANNELS = [["channel-1", "channel-4"]]
-ACTIVE_SERVERS = ["Bot testing"]
+// 0-0: channel-1; 0-1: channel-4
+ACTIVE_CHANNELS = [["301967619085565952", "302158544394911749"]]
+// 0: Bot Testing
+ACTIVE_SERVERS = ["301964917882486785"]
 MY_ID = credentials.ID
 // the bot's token - https://discordapp.com/developers/applications/me
 const token = credentials.TOKEN
@@ -33,12 +35,12 @@ bot.on('message', message => {
 
 	// Is this a valid message that I want to respond to?
 	do_me = false
-	if (ACTIVE_SERVERS.indexOf(message.guild.name) > -1) {
-		if (ACTIVE_CHANNELS[ACTIVE_SERVERS.indexOf(message.guild.name)].indexOf(message.channel.name) > -1) {
+	if (ACTIVE_SERVERS.indexOf(message.guild.id) > -1) {
+		if (ACTIVE_CHANNELS[ACTIVE_SERVERS.indexOf(message.guild.id)].indexOf(message.channel.id) > -1) {
 			do_me = true
 		}
 	}
-	
+
 	// Only work on ACTIVE_CHANNELS in ACTIVE_SERVERS and not the bot's messages
 	if (do_me && message.author.id != MY_ID) {
 
