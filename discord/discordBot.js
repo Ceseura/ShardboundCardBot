@@ -1,40 +1,46 @@
-/*
-  A ping pong bot, whenever you send "ping", it replies "pong".
-*/
-
-ACTIVE_CHANNELS = ["channel-1", "channel-4"]
-ACTIVE_SERVERS = ["Bot testing"]
-MY_ID = '301964200492793856'
-
-// import the discord.js module
+// Imports
+const credentials = require('./credentials.js')
 const Discord = require('discord.js')
-var fs = require('fs')
-var data
+const fs = require('fs')
 
+ACTIVE_CHANNELS = [["channel-1", "channel-4"]]
+ACTIVE_SERVERS = ["Bot testing"]
+MY_ID = credentials.ID
+// the bot's token - https://discordapp.com/developers/applications/me
+const token = credentials.TOKEN
+
+// The data from the .json file
+var data
 fs.readFile('../ShardBound_cards.json', 'utf8', function(err, fileData) {
 	if (err) throw err
 	console.log("File is ready!")
 	data = JSON.parse(fileData)
 })
 
-colors = JSON.parse('{"Neutral": "", "Steelsinger": "(Red) ", "Fatekeeper": "(Blue) ", "Landshaper": "(Green) ", "Packrunner": "(Yellow) ", "Wayfinder": "(Orange) ", "Bloodbinder": "(Purple) "}')
+// For printing purposes
+var colors = JSON.parse('{"Neutral": "", "Steelsinger": "(Red) ", "Fatekeeper": "(Blue) ", "Landshaper": "(Green) ", "Packrunner": "(Yellow) ", "Wayfinder": "(Orange) ", "Bloodbinder": "(Purple) "}')
 
 // create an instance of a Discord Client, and call it bot
 const bot = new Discord.Client()
 
-// the token of your bot - https://discordapp.com/developers/applications/me
-const token = 'MzAxOTY0MjAwNDkyNzkzODU2.C9Cr2Q.1mjt4m5kpk_3SyRg8qY9C_y_RNk'
-
-// the ready event is vital, it means that your bot will only start reacting to information
-// from Discord _after_ ready is emitted.
+// the ready event is vital, it means that your bot will only start reacting to information from Discord _after_ ready is emitted.
 bot.on('ready', () => {
   console.log('Bot is ready!')
 });
 
 // create an event listener for messages
 bot.on('message', message => {
-	// Only work on ACTIVE_CHANNELS and ACTIVE_SERVERS and not the bot's messages
-	if (ACTIVE_CHANNELS.indexOf(message.channel.name) > -1 && ACTIVE_SERVERS.indexOf(message.guild.name) > -1 && message.author.id != MY_ID) {
+
+	// Is this a valid message that I want to respond to?
+	do_me = false
+	if (ACTIVE_SERVERS.indexOf(message.guild.name) > -1) {
+		if (ACTIVE_CHANNELS[ACTIVE_SERVERS.indexOf(message.guild.name)].indexOf(message.channel.name) > -1) {
+			do_me = true
+		}
+	}
+	
+	// Only work on ACTIVE_CHANNELS in ACTIVE_SERVERS and not the bot's messages
+	if (do_me && message.author.id != MY_ID) {
 
 		// REGEX match for [[CARD NAME]]
 		var re = /\[\[[\d\w/' ,-]+\]\]/mig

@@ -17,7 +17,7 @@ starttime = datetime.datetime.now().timestamp()
 # the card, from www.shardveil.com/cards/. 
 
 # Get the data from the .json file
-with open("ShardBound_cards.json") as data_file:
+with open("../ShardBound_cards.json") as data_file:
 	data = json.load(data_file)
 
 # Dictionary for display purposes
