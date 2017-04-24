@@ -114,7 +114,7 @@ def main():
 def process_item(item, subMode, filename):
 	# Don't do anything if the comment was posted before the bot was started
 	if starttime > item.created_utc:
-		print("skipped:", starttime, ">", item.created_utc)
+		#print("skipped:", starttime, ">", item.created_utc)
 		return
 
 	# Normalize text to lowercase
