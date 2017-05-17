@@ -1,11 +1,12 @@
 {
 	"_author": "Karavis",
-	"_contact": "hydrodynamicTurtle@gmail.com",
+	"_contact": "unpiraticalTurtle@gmail.com",
 	"_info": "Feel free to use this file for your own purposes, as long as you credit me",
 	"_credits": "All data taken from www.shardveil.com",
-	"_version": "Version 1.0, up to date as of 10 April 2017",
-	"_TODO": "Fix picture links for Idol of Kinship, Rites Reader, Tribe Warrior, Ancient Caller, To me, Thundering Giant, Swift Strike, Pack Lord, Menagerie, Wolf Primal, Shade, Dancer, Dark Traveler",
-	"_TODO2": "Add tokens for Kraken, Venerated Champion, Vardan's blessings, vein waker, angry stones",
+	"_version": "Version 1.0",
+	"_updated": "Last updated 17 May 2017, for path 41",
+	"_TODO1": "Add tokens for Vardan's blessings, vein waker",
+	"_TODO2": "Add colon (:) after Roar: cards",
 
 	"arcanum steward": {
 		"name": "Arcanum Steward", 
@@ -577,7 +578,7 @@
 		"faction": "Neutral", 
 		"type": "Melee Minion", 
 		"mana": "3", 
-		"attack": "4", 
+		"attack": "3", 
 		"health": "5", 
 		"tribe": "", 
 		"rarity": "Rare", 
@@ -590,7 +591,7 @@
 		"type": "Melee Minion", 
 		"mana": "3", 
 		"attack": "4", 
-		"health": "5", 
+		"health": "4", 
 		"tribe": "", 
 		"rarity": "Common", 
 		"text": "Ability (1): Gain Splash this turn." 
@@ -624,9 +625,9 @@
 		"link": "https://www.shardveil.com/images/cards/placeholder/weavebreaker.png", 
 		"faction": "Neutral", 
 		"type": "Melee Minion", 
-		"mana": "3", 
+		"mana": "5", 
 		"attack": "4", 
-		"health": "4", 
+		"health": "5", 
 		"tribe": "", 
 		"rarity": "Rare", 
 		"text": "Warcry: Enemy minions cost 2 more for a full round." 
@@ -665,7 +666,7 @@
 		"health": "7", 
 		"tribe": "", 
 		"rarity": "Rare", 
-		"text": "Ability (0): Charm an enemy minion in line of sight. Cannot Move. Poison." 
+		"text": "Ability (1): Charm an enemy minion in line of sight. Cannot Move. Poison." 
 		},
 	"cannoneer": {
 		"name": "Cannoneer", 
@@ -742,9 +743,9 @@
 	"spirit binder": {
 		"name": "Spirit Binder", 
 		"link": "https://www.shardveil.com/images/cards/placeholder/spirit-binder.png", 
-		"faction": "Neutral", 
+		"faction": "Fatebinder", 
 		"type": "Melee Minion", 
-		"mana": "4", 
+		"mana": "5", 
 		"attack": "3", 
 		"health": "6", 
 		"tribe": "", 
@@ -844,8 +845,8 @@
 		"attack": "2", 
 		"health": "10", 
 		"tribe": "", 
-		"rarity": "Common", 
-		"text": "During your opponent's turn, gain +4 Attack." 
+		"rarity": "Epic", 
+		"text": "Adjacent enemy minions are Rooted." 
 		},
 	"hadrien, the white rook": {
 		"name": "Hadrien, The White Rook", 
@@ -917,7 +918,7 @@
 		"health": "5", 
 		"tribe": "", 
 		"rarity": "Rare", 
-		"text": "Ability (0): Summon a Rat in ANY open tile." 
+		"text": "Ability (1): Summon a Rat in ANY open tile." 
 		},
 	"rat": {
 		"name": "Rat", 
@@ -1061,7 +1062,7 @@
 		"health": "5", 
 		"tribe": "", 
 		"rarity": "Epic", 
-		"text": "Ability (0): Teleport up to three tiles." 
+		"text": "Ability (1): Teleport up to three tiles." 
 		},
 	"skywatch dragoon": {
 		"name": "Skywatch Dragoon", 
@@ -1086,6 +1087,18 @@
 		"tribe": "", 
 		"rarity": "Common", 
 		"text": "Deathhowl: Summon three Adoring Fans next to this minion." 
+		},
+	"adoring fan": {
+		"name": "Adoring Fan", 
+		"link": "https://www.shardveil.com/images/cards/placeholder/venerated-champion.png", 
+		"faction": "Neutral", 
+		"type": "Melee Minion", 
+		"mana": "0", 
+		"attack": "2", 
+		"health": "1", 
+		"tribe": "", 
+		"rarity": "Token", 
+		"text": "" 
 		},
 	"admiral florian": {
 		"name": "Admiral Florian", 
@@ -1207,6 +1220,18 @@
 		"rarity": "Legendary", 
 		"text": "Warcry: Summon Tentacles on random tiles until you control eight Tentacles." 
 		},
+	"tentacle": {
+		"name": "Tentacle", 
+		"link": "https://www.shardveil.com/images/cards/placeholder/the-kraken.png", 
+		"faction": "Neutral", 
+		"type": "Melee Minion", 
+		"mana": "1", 
+		"attack": "2", 
+		"health": "2", 
+		"tribe": "", 
+		"rarity": "Token",
+		"text": "Cannot move", 
+	},
 	"thundering giant": {
 		"name": "Thundering Giant", 
 		"link": "https://www.shardveil.com/images/cards/placeholder/thundering-giant.png", 
@@ -1214,10 +1239,10 @@
 		"type": "Melee Minion", 
 		"mana": "7", 
 		"attack": "6", 
-		"health": "6", 
+		"health": "9", 
 		"tribe": "", 
 		"rarity": "Legendary", 
-		"text": "Destroy all enemy minions within 2 tiles that cost 2 or less." 
+		"text": "Warcry: Deal 2 damage to all enemies in adjacent lines." 
 		},
 	"tinker master": {
 		"name": "Tinker Master", 
@@ -1289,7 +1314,7 @@
 		"health": "3", 
 		"tribe": "", 
 		"rarity": "Common", 
-		"text": "Ability (0): Teleport another friendly minion in line of sight up to two tiles." 
+		"text": "Ability (1): Teleport another friendly minion in line of sight up to two tiles." 
 		},
 	"hound class mech": {
 		"name": "Hound Class Mech", 
@@ -1397,7 +1422,7 @@
 		"health": "3", 
 		"tribe": "", 
 		"rarity": "Common", 
-		"text": "Ability (0): Restore 2 Health to another friendly minion within line of sight." 
+		"text": "Ability (1): Restore 2 Health to another friendly minion within line of sight." 
 		},
 	"outlaw class mech": {
 		"name": "Outlaw Class Mech", 
@@ -1409,7 +1434,7 @@
 		"health": "4", 
 		"tribe": "", 
 		"rarity": "Rare", 
-		"text": "+1 Movement. Upgrade (1): -1/-2, gain Ranged. Upgrade (2): +4 Health." 
+		"text": "+1 Movement. Upgrade (1): -2 Attack, become Ranged. Upgrade (2): +3 Health." 
 		},
 	"overdrive": {
 		"name": "Overdrive", 
@@ -1481,7 +1506,7 @@
 		"health": "5", 
 		"tribe": "", 
 		"rarity": "Rare", 
-		"text": "Ability (0): Give a friendly ranged minion \"Can attack twice this turn\"." 
+		"text": "Ability (2): Give a friendly ranged minion \"Can attack twice this turn\"." 
 		},
 	"repair foreman": {
 		"name": "Repair Foreman", 
@@ -1589,7 +1614,7 @@
 		"health": "4", 
 		"tribe": "", 
 		"rarity": "Basic", 
-		"text": "Ability (0): Give all other friendly minions +1 Attack this turn." 
+		"text": "Ability (2): Give all other friendly minions +1 Attack this turn." 
 		},
 	"upgrade engineer": {
 		"name": "Upgrade Engineer", 
@@ -1721,7 +1746,7 @@
 		"health": "2", 
 		"tribe": "", 
 		"rarity": "Basic", 
-		"text": "Deathhowl: Add a Precognition to your hand." 
+		"text": "Deathhowl: Add two Precognitions to your hand." 
 		},
 	"precognition": {
 		"name": "Precognition", 
@@ -1913,7 +1938,7 @@
 		"health": "4", 
 		"tribe": "", 
 		"rarity": "Rare", 
-		"text": "Ability (0): Swap positions with a minion in line of sight." 
+		"text": "Ability (2): Swap positions with a minion in line of sight." 
 		},
 	"slow reflexes": {
 		"name": "Slow Reflexes", 
@@ -1960,7 +1985,7 @@
 		"attack": "", 
 		"health": "", 
 		"tribe": "", 
-		"rarity": "Epic", 
+		"rarity": "Rare", 
 		"text": "Permanently take control of an enemy minion that costs 2 or less. It can't act this turn." 
 		},
 	"astral champion": {
@@ -1969,8 +1994,8 @@
 		"faction": "Fatekeeper", 
 		"type": "Melee Minion", 
 		"mana": "4", 
-		"attack": "3", 
-		"health": "3", 
+		"attack": "2", 
+		"health": "2", 
 		"tribe": "", 
 		"rarity": "Epic", 
 		"text": "Warcry: Draw a card. Gain Attack and Health equal to its cost." 
@@ -2054,7 +2079,7 @@
 		"type": "Ranged Minion", 
 		"mana": "4", 
 		"attack": "2", 
-		"health": "4", 
+		"health": "6", 
 		"tribe": "", 
 		"rarity": "Common", 
 		"text": "Whenever this unit deals damage, add a Precognition to your hand." 
@@ -2068,7 +2093,7 @@
 		"attack": "", 
 		"health": "", 
 		"tribe": "", 
-		"rarity": "Rare", 
+		"rarity": "Common", 
 		"text": "Bounce a minion in line of sight. Create a copy of that minion in your hand." 
 		},
 	"gravity surge": {
@@ -2086,7 +2111,7 @@
 	"mind melter": {
 		"name": "Mind Melter", 
 		"link": "https://www.shardveil.com/images/cards/placeholder/mind-melter.png", 
-		"faction": "Fatekeeper", 
+		"faction": "Neutral", 
 		"type": "Melee Minion", 
 		"mana": "5", 
 		"attack": "4", 
@@ -2104,7 +2129,7 @@
 		"attack": "5", 
 		"health": "7", 
 		"tribe": "", 
-		"rarity": "Common", 
+		"rarity": "Basic", 
 		"text": "Costs 2 less if you have played a spell this turn." 
 		},
 	"prism dancer": {
@@ -2117,7 +2142,7 @@
 		"health": "7", 
 		"tribe": "", 
 		"rarity": "Legendary", 
-		"text": "Ability (0): Make up to three tiles untraversable for a full round." 
+		"text": "Ability (2): Make up to three tiles untraversable for a full round." 
 		},
 	"general vardan": {
 		"name": "General Vardan", 
@@ -2347,6 +2372,18 @@
 		"rarity": "Rare", 
 		"text": "Deep Strike At the end of your turn, summon a 3/1 Angry Stone in a random adjacent tile." 
 		},
+	"angry stone": {
+		"name": "Amgry Stone", 
+		"link": "https://www.shardveil.com/images/cards/placeholder/venerated-champion.png", 
+		"faction": "Landshaper", 
+		"type": "Melee Minion", 
+		"mana": "1", 
+		"attack": "3", 
+		"health": "1", 
+		"tribe": "", 
+		"rarity": "Token", 
+		"text": "Uncontrollable" 
+		},
 	"vein waker": {
 		"name": "Vein Waker", 
 		"link": "https://www.shardveil.com/images/cards/placeholder/vein-waker.png", 
@@ -2357,7 +2394,7 @@
 		"health": "5", 
 		"tribe": "", 
 		"rarity": "Epic", 
-		"text": "Ability (0): Choose an adjacent Boulder. Summon a random Metal Tempest next to it." 
+		"text": "Ability (1): Choose an adjacent Boulder. Summon a random Metal Tempest next to it." 
 		},
 	"grove tender": {
 		"name": "Grove Tender", 
@@ -2813,7 +2850,7 @@
 		"health": "6", 
 		"tribe": "", 
 		"rarity": "Legendary", 
-		"text": "Ability (0): Teleport next to a minion with 1 Health, then destroy it and gain +1/+1." 
+		"text": "Ability (2): Teleport next to a minion with 1 Health, then destroy it and gain +1/+1." 
 		},
 	"pain beast": {
 		"name": "Pain Beast", 
@@ -2893,8 +2930,8 @@
 		"faction": "Bloodbinder", 
 		"type": "Melee Minion", 
 		"mana": "11", 
-		"attack": "8", 
-		"health": "8", 
+		"attack": "10", 
+		"health": "10", 
 		"tribe": "", 
 		"rarity": "Rare", 
 		"text": "Costs 1 less for each friendly Thrall on the field and in your graveyard." 
@@ -2971,9 +3008,9 @@
 		"rarity": "Common", 
 		"text": "Deathhowl: Summon 2 Spirit Primals next to this minion." 
 		},
-	"eagle primal": {
-		"name": "Eagle Primal", 
-		"link": "https://www.shardveil.com/images/cards/placeholder/eagle-primal.png", 
+	"splinterwing primal": {
+		"name": "Splinterwing Primal", 
+		"link": "https://www.shardveil.com/images/cards/placeholder/splinterwing-primal.png", 
 		"faction": "Packrunner", 
 		"type": "Ranged Minion", 
 		"mana": "2", 
@@ -2981,7 +3018,7 @@
 		"health": "3", 
 		"tribe": "Primal", 
 		"rarity": "Common", 
-		"text": "Has +1 Attack while your Hero is a Primal." 
+		"text": "Deals double damage to injured minions." 
 		},
 	"feral rush": {
 		"name": "Feral Rush", 
@@ -2997,7 +3034,7 @@
 		},
 	"idol of kinship": {
 		"name": "Idol Of Kinship", 
-		"link": "https://www.shardveil.com/images/cards/placeholder/idol-of-reckoning.png", 
+		"link": "https://www.shardveil.com/images/cards/placeholder/idol-of-kinship.png", 
 		"faction": "Packrunner", 
 		"type": "Artifact Minion", 
 		"mana": "2", 
@@ -3036,7 +3073,7 @@
 		"link": "https://www.shardveil.com/images/cards/placeholder/roar-strength.png", 
 		"faction": "Packrunner", 
 		"type": "Spell", 
-		"mana": "2", 
+		"mana": "3", 
 		"attack": "", 
 		"health": "", 
 		"tribe": "", 
@@ -3093,15 +3130,15 @@
 		},
 	"rites reader": {
 		"name": "Rites Reader", 
-		"link": "https://www.shardveil.com/images/cards/placeholder/beloved-trainer.png", 
+		"link": "https://www.shardveil.com/images/cards/placeholder/rites-reader.png", 
 		"faction": "Packrunner", 
 		"type": "Melee Minion", 
 		"mana": "2", 
-		"attack": "3", 
+		"attack": "2", 
 		"health": "3", 
 		"tribe": "", 
 		"rarity": "Common", 
-		"text": "Warcry: Draw a card for each injured enemy." 
+		"text": "Warcry: Draw a card for each injured enemy minion." 
 		},
 	"cut down": {
 		"name": "Cut Down", 
@@ -3137,7 +3174,7 @@
 		"health": "5", 
 		"tribe": "Primal", 
 		"rarity": "Legendary", 
-		"text": "Ability (0): Grab a minion within three tiles and teleport it up to three tiles away from where it was." 
+		"text": "Ability (2): Grab a minion within three tiles and teleport it up to three tiles away from where it was." 
 		},
 	"pack mentality": {
 		"name": "Pack Mentality", 
@@ -3161,7 +3198,7 @@
 		"health": "5", 
 		"tribe": "", 
 		"rarity": "Basic", 
-		"text": "Warcry: Give a friendly Primal +2 Attack this turn." 
+		"text": "Warcry: Give a friendly Primal +2 Attack and uncounterable this turn." 
 		},
 	"winged primal": {
 		"name": "Winged Primal", 
@@ -3185,7 +3222,7 @@
 		"health": "5", 
 		"tribe": "Primal", 
 		"rarity": "Basic", 
-		"text": "Summon this minion next to the enemy hero. Warcry: Deal 2 damage to the enemy hero." 
+		"text": "Choose an injured enemy. Summon this minion in a random tile next to it, then deal 2 daamge to it." 
 		},
 	"idol of eternity": {
 		"name": "Idol Of Eternity", 
