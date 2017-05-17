@@ -5,7 +5,7 @@
 	"_credits": "All data taken from www.shardveil.com",
 	"_version": "Version 1.0",
 	"_updated": "Last updated 17 May 2017, for path 41",
-	"_TODO1": "Add tokens for Vardan's blessings, vein waker",
+	"_TODO1": "Add tokens for Kraken, Vardan's blessings, vein waker",
 	"_TODO2": "Add colon (:) after Roar: cards",
 
 	"arcanum steward": {
@@ -646,7 +646,7 @@
 		},
 	"stormbell adept": {
 		"name": "Stormbell Adept", 
-		"link": "https://www.shardveil.com/images/cards/placeholder/bellowing-giant.png", 
+		"link": "https://www.shardveil.com/images/cards/placeholder/stormbell-adept.png", 
 		"faction": "Neutral", 
 		"type": "Melee Minion", 
 		"mana": "4", 
