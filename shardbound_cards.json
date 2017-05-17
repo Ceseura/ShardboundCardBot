@@ -1220,18 +1220,6 @@
 		"rarity": "Legendary", 
 		"text": "Warcry: Summon Tentacles on random tiles until you control eight Tentacles." 
 		},
-	"tentacle": {
-		"name": "Tentacle", 
-		"link": "https://www.shardveil.com/images/cards/placeholder/the-kraken.png", 
-		"faction": "Neutral", 
-		"type": "Melee Minion", 
-		"mana": "1", 
-		"attack": "2", 
-		"health": "2", 
-		"tribe": "", 
-		"rarity": "Token",
-		"text": "Cannot move", 
-		},
 	"thundering giant": {
 		"name": "Thundering Giant", 
 		"link": "https://www.shardveil.com/images/cards/placeholder/thundering-giant.png", 
