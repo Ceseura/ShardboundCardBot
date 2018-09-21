@@ -1,0 +1,9 @@
+['[[professor mori]]', '[[quantum turnkey]]', '[[inspiring banner]]', '[[wolf primal]]', '[[incorrect speling]]'] Detected: Cephael in comment's dgdoctc (2017-04-17 12:05:51.923516).
+Couldn't find incorrect speling2017-04-17 12:11:54.741575 Detected: ['[[force blast]]', '[[cytoplast]]', '[[blarg]]'] in Cephael's comment (dgdooap).
+2017-04-17 12:12:58.721839 Detected: ['[[force blast]]', '[[cytoplast]]', '[[blarg]]'] in Cephael's comment (dgdoqbe).
+Couldn't find blarg2017-04-17 12:24:34.190952 Detected: ['[[novice knight]]', '[[tiny island fenya]]'] in Cephael's comment (https://www.reddit.com/r/Alex_is_a_Scrub/comments/64m29t/rshardbound_bot_test/).
+2017-04-17 12:25:06.450353 Detected: ['[[force blast]]', '[[cytoplast]]', '[[blarg]]'] in Cephael's comment (https://www.reddit.com/r/Alex_is_a_Scrub/comments/64m29t/rshardbound_bot_test/).
+Couldn't find blarg
+
+2017-04-19 16:08:44.399301 Detected: ['[[force blast]]', '[[cytoplast]]', '[[blarg]]'] in Shardbound-Card-Bot's comment (https://www.reddit.com/r/Alex_is_a_Scrub/comments/64m29t/rshardbound_bot_test/).
+Couldn't find blarg

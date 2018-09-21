@@ -1,0 +1,5 @@
+ID = '301964200492793856'
+TOKEN = 'MzAxOTY0MjAwNDkyNzkzODU2.C9Cr2Q.1mjt4m5kpk_3SyRg8qY9C_y_RNk'
+
+exports.ID = ID
+exports.TOKEN = TOKEN

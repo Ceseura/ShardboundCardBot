@@ -1,0 +1,3 @@
+
+2017-04-17 12:26:54.043353 Detected: ['[[force blast]]', '[[cytoplast]]', '[[blarg]]'] in Cephael's submission (/r/Alex_is_a_Scrub/comments/65wl7d/asdf/).
+Couldn't find blarg
